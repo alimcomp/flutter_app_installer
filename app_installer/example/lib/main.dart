@@ -133,6 +133,24 @@ class _FileDownloaderState extends State<FileDownloader> {
                       height: 40.0,
                       minWidth: 100.0,
                     ),
+                    MaterialButton(
+                      child: Text('install exe'),
+                      onPressed: () async {
+                       
+                            
+                        path = "C:\\Users\\mohammadi.GREENWARE\\Documents\\flutter_app_installer\\app_installer\\example\\res\\installer.exe";
+                        try {
+                          await installApp(path);
+                        } catch (error) {
+                          print(error);
+                        }
+                      },
+                      disabledColor: Colors.blueGrey,
+                      color: Colors.green,
+                      textColor: Colors.white,
+                      height: 40.0,
+                      minWidth: 100.0,
+                    ),
                   ],
                 )));
 }

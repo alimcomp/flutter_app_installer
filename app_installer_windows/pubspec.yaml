@@ -1,6 +1,6 @@
 name: app_installer_windows
 description: A new Flutter plugin project.
-version: 0.0.1
+version: 1.1.0
 
 environment:
   sdk: ">=2.16.2 <3.0.0"

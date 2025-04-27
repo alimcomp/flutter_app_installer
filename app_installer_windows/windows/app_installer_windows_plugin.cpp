@@ -54,14 +54,14 @@ void AppInstallerWindowsPlugin::HandleMethodCall(
                                  filePath = std::get<std::string>(filePath_it->second);
                                }
 
-                               if (filePath.find(".msix") != std::string::npos)
+                               if (filePath.find(".msix") != std::string::npos || filePath.find(".exe") != std::string::npos)
                                {
                                    //its ok
                                    int64_t res = (int64_t)AppInstaller::runFileWindows(filePath);
                                    result->Success(flutter::EncodableValue(res));
                                }
                                else {
-                                   result->Error("403", "File isn't msix");
+                                   result->Error("403", "File isn't msix or exe");
                                }
 
                             
