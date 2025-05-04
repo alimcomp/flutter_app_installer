@@ -1,7 +1,6 @@
 name: app_installer_android
 description: A new Flutter plugin project.
-version: 0.0.1
-homepage:
+version: 1.0.0
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
